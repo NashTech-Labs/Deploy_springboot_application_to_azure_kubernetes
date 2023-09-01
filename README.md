@@ -1,4 +1,7 @@
 ### For setting up the Automated github pipeline the pre requisite you need:
+
+![](/home/knoldus/Documents/sdk/deploy_springboot_application_to_azure_kubernetes/Diagram.png)
+
 * Must have a microsoft azure account 
 * Create a resouce group in the azure you can create it from dashboard or by using the command
 `  az group create --name {group name} --location {azure region}`
