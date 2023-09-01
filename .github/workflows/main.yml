@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: ghcr.io/dev-swapnildixit4161/myapp/myimage
+  IMAGE_NAME: ghcr.io/{github-username}/myapp/myimage
   AKS_CLUSTER: demo
   AKS_NAMESPACE: default
 
@@ -28,7 +28,7 @@ jobs:
           sudo sh get-docker.sh
 
       - name: Log in to GitHub Artifact Registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login "ghcr.io/dev-swapnildixit4161/my-app" -u dev-swapnildixit4161 --password-stdin
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login "ghcr.io/{github-username}/my-app" -u {github-username} --password-stdin
 
       - name: Build and push Docker image
         run: |
