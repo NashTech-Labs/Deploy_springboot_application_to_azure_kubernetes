@@ -1,4 +1,4 @@
-For setting up the Automated github pipeline the pre requisite you need:
+### For setting up the Automated github pipeline the pre requisite you need:
 * Must have a microsoft azure account 
 * Create a resouce group in the azure you can create it from dashboard or by using the command
 `  az group create --name {group name} --location {azure region}`
